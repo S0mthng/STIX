@@ -6,10 +6,19 @@
             "type": "incident",
             "spec_version": "2.1",
             "id": "incident--0",
-            "created": "2023-10-01T08:00:00.000Z",
+            "created": "2023-10-01T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
-            "name": "Компрометация энергетической компании",
+            "name": "Компрометация Linux-инфраструктуры энергетической компании",
             "description": "Инцидент компрометации информационной системы энергетической компании с использованием трояна Decoy Dog"
+        },
+        {
+            "type": "incident",
+            "spec_version": "2.1",
+            "id": "incident--1",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Компрометация Windows-инфраструктуры компании",
+            "description": "Инцидент компрометации информационной системы компании на основе Windows с использованием трояна Decoy Dog"
         },
 
         {
@@ -28,11 +37,11 @@
             "spec_version": "2.1",
             "id": "intrusion-set--0",
             "created": "2023-11-30T12:00:00.000Z",
-            "modified": "2024-01-09T20:30:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
             "name": "group Hellhounds",
             "description": "Атаки на организации на террритории РФ",
-            "first_seen": "2022-09-01T08:00:00.000Z",
-            "last_seen": "2023-10-01T08:00:00.000Z",
+            "first_seen": "2019-11-29T12:00:00.000Z",
+            "last_seen": "2024-01-03T12:00:00.000Z",
             "goals": "unclear"
         },
 
@@ -40,6 +49,20 @@
             "type": "attack-pattern",
             "spec_version": "2.1",
             "id": "attack-pattern--0",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Resource Development",
+            "external_references": [
+                {
+                    "source_name": "MITRE TTPs",
+                    "external_id": "T1587.001"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--1",
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "name": "Initial Access",
@@ -65,23 +88,27 @@
         {
             "type": "attack-pattern",
             "spec_version": "2.1",
-            "id": "attack-pattern--1",
+            "id": "attack-pattern--2",
             "created": "2023-11-30T12:00:00.000Z",
-            "modified": "2024-01-09T20:30:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
             "name": "Persistence",
             "external_references": [
                 {
                     "source_name": "MITRE TTPs",
                     "external_id": "T1543.002"
+                },
+                {
+                    "source_name": "MITRE TTPs",
+                    "external_id": "T1543.003"
                 }
             ]
         },
         {
             "type": "attack-pattern",
             "spec_version": "2.1",
-            "id": "attack-pattern--2",
+            "id": "attack-pattern--3",
             "created": "2023-11-30T12:00:00.000Z",
-            "modified": "2024-01-09T20:30:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
             "name": "Defense Evasion",
             "external_references": [
                 {
@@ -95,13 +122,31 @@
                 {
                     "source_name": "MITRE TTPs",
                     "external_id": "T1027.002"
+                },
+                {
+                    "source_name": "MITRE TTPs",
+                    "external_id": "T1036.005"
                 }
             ]
         },
         {
             "type": "attack-pattern",
             "spec_version": "2.1",
-            "id": "attack-pattern--3",
+            "id": "attack-pattern--4",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-01-09T20:30:00.000Z",
+            "name": "Credential Access",
+            "external_references": [
+                {
+                    "source_name": "MITRE TTPs",
+                    "external_id": "T1056"
+                }
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--5",
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "name": "Discovery",
@@ -115,7 +160,7 @@
         {
             "type": "attack-pattern",
             "spec_version": "2.1",
-            "id": "attack-pattern--4",
+            "id": "attack-pattern--6",
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "name": "Command and Control",
@@ -134,17 +179,31 @@
                 }
             ]
         },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7",
+            "created": "2023-11-30T12:00:00.000Z",
+            "modified": "2024-01-09T20:30:00.000Z",
+            "name": "Impact",
+            "external_references": [
+                {
+                    "source_name": "MITRE TTPs",
+                    "external_id": "T1485"
+                }
+            ]
+        },
 
         {
             "type": "threat-actor",
             "spec_version": "2.1",
             "id": "threat-actor--0",
             "created": "2023-11-30T12:00:00.000Z",
-            "modified": "2024-01-09T20:30:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
             "name": "Hellhounds",
             "description": "Группа Hellhounds",
-            "first_seen": "2022-09-01T08:00:00.000Z",
-            "last_seen": "2023-10-01T08:00:00.000Z",
+            "first_seen": "2019-11-29T12:00:00.000Z",
+            "last_seen": "2024-01-03T12:00:00.000Z",
             "goals": "unclear",
             "sophistication": "expert"
         },
@@ -164,14 +223,14 @@
                 "tool--4", "tool--5", "tool--6", "tool--7", "tool--8",
                 "tool--9", "tool--10", "tool--11", "tool--12", "tool--13",
                 "tool--14", "tool--15", "tool--16", "tool--17", "tool--18",
-                "attack-pattern--0", "attack-pattern--1", "attack-pattern--2", "attack-pattern--3", "attack-pattern--4",
-                "vulnerability--0", "vulnerability--1", "indicator--0", "indicator--1", "indicator--2",
-                "indicator--3", "indicator--4", "indicator--5", "indicator--6", "indicator--7",
-                "indicator--8", "indicator--9", "indicator--10", "indicator--11", "indicator--12",
-                "indicator--13", "indicator--14", "indicator--15", "indicator--16", "indicator--17",
-                "indicator--18", "indicator--19", "indicator--20", "indicator--21", "indicator--22",
-                "indicator--23", "indicator--2", "indicator--25", "indicator--26", "identity--0",
-                "threat-actor--0", "intrusion-set--0"
+                "attack-pattern--1", "attack-pattern--2", "attack-pattern--3", "attack-pattern--5", "attack-pattern--6",
+                "attack-pattern--7", "vulnerability--0", "vulnerability--1", "indicator--0", "indicator--1",
+                "indicator--2", "indicator--3", "indicator--4", "indicator--5", "indicator--6",
+                "indicator--7", "indicator--8", "indicator--9", "indicator--10", "indicator--11",
+                "indicator--12", "indicator--13", "indicator--14", "indicator--15", "indicator--16",
+                "indicator--17", "indicator--18", "indicator--19", "indicator--20", "indicator--21",
+                "indicator--22", "indicator--23", "indicator--24", "indicator--25", "indicator--26",
+                "identity--0", "threat-actor--0", "intrusion-set--0"
             ]
         },
         {
@@ -184,6 +243,40 @@
             "description": "Solar 4RAYS для SOC-Forum 2023",
             "report_types": ["incident"],
             "published": "2023-12-04T8:30:00.000Z"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--2",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Hellhounds: операция Lahat. Часть 2",
+            "description": "PT CSIRT publication",
+            "report_types": ["incident"],
+            "published": "2024-05-23T8:30:00.000Z",
+            "object_refs": [
+                "report--0", "report--3", "tool--18", "tool--19", "tool--20",
+                "tool--21", "tool--22", "tool--23", "tool--24", "tool--25",
+                "tool--26", "tool--27", "tool--28", "attack-pattern--0", "attack-pattern--1",
+                "attack-pattern--2", "attack-pattern--3", "attack-pattern--4", "attack-pattern--5", "attack-pattern--6",
+                "attack-pattern--7", "vulnerability--0", "vulnerability--1", "indicator--27", "indicator--28",
+                "indicator--29", "indicator--30", "indicator--31", "indicator--32", "indicator--33",
+                "indicator--34", "indicator--35", "indicator--36", "indicator--37", "indicator--38",
+                "indicator--39", "indicator--40", "indicator--41", "indicator--42", "indicator--43",
+                "indicator--44", "indicator--45", "indicator--46", "indicator--47", "indicator--48",
+                "threat-actor--0", "intrusion-set--0"
+            ]
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--3",
+            "created": "2023-11-30T12:00:00.000Z",
+            "modified": "2024-01-09T20:30:00.000Z",
+            "name": "Hellhounds: операция Lahat",
+            "description": "Cyber-festival PHDays 2",
+            "report_types": ["incident"],
+            "published": "2023-12-04T12:00:00.000Z"
         },
 
         {
@@ -339,8 +432,8 @@
             "id": "tool--9",
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
-            "name": "Cleftia",
-            "description": "CLEFTIA",
+            "name": "Clefia",
+            "description": "CLEFIA",
             "kill_chain_phases": [
                 {
                     "kill_chain_name": "decoy-dog-2-kill-chain",
@@ -481,6 +574,157 @@
             "kill_chain_phases": [
                 {
                     "kill_chain_name": "decoy-dog-2-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--19",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "MAService",
+            "description": "Microsoft Account Service",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--20",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "MVService",
+            "description": "Microsoft Viewer Service",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--21",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Scipher",
+            "description": "Lahat scipher",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--22",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Clefia",
+            "description": "CLEFTIA(CBC)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ],
+            "tool_version": "256 bits"
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--23",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Dga",
+            "description": "DGA",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--24",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Sliver",
+            "description": "sliver",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--25",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "3Snake",
+            "description": "3snake",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--26",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Rc4",
+            "description": "RC4",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--27",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "Ssh",
+            "description": "SSH",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--28",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "name": "imind",
+            "description": "iMind",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
                     "phase_name": "trojan"
                 }
             ]
@@ -926,6 +1170,336 @@
             "pattern_type": "stix",
             "valid_from": "2023-11-30T12:00:00.000Z"
         },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--27",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "testvec.exe",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = '9a977571296ae1548c32df94be75eec2a414798bee7064b0bf44859e886a0cfa'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--28",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "MaxPatrol SIEM Agent.exe",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = '4d30fd05c3bdac792e0a011892e2cad02818436484e81b6de6a02928149bc92d'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--29",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "Microsoft.exe",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = 'e27d1bab901c1bb414d0849c5c132faa8c7c6a61357d9627a7d2785270034793'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--30",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "NtpService.exe",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = 'd9a8151aff9d1c061826a9812ed9a6600805c74a519df333513fd4a79d2d4e61'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--31",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "Apache ActiveMQ.exe",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = '07fe71b256c1c913b0f3e3fa67e53d21a3d1f499beb4e550597f5743797a77c4'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--32",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "AccSrvX64__STABLE__2016-11-10.exe",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = '1b8b4be020d3350d025c7a245eb0d7166ff2c329dc92af175ef0499cba583071'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--33",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "R_TARIF.VIEWS_X86.EXE",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = 'a03e2ca143e867a99e2bc73bd4e5c2dd078a9f671aa0a4ce9611a8bc39a769e2'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "loader"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--34",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "NPipeX64_32.dll",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = 'e19dc185e99cfdc0c25f18fb34ffabff2a4877d6d5843e4c67c05ce182f9780e'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--35",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "r_tarif.dll2Qur",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = '106436a4fafe00112b19b1374456c1746b988950b71d700680088d74494e4936'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--36",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "AzimuthF.exe_",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = '510da6d88ae4dd51d62796023a18b39db08a016ee4ee7178b1afdc91c58f9e1e'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--37",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "AzimuthF_2.exe_",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "file:hashes.'SHA-256' = '6cb2979aa1fddd42df2ba596f705ce9bbdb2ec246649218d598d779769857c21'",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "decoy-dog-win-kill-chain",
+                    "phase_name": "trojan"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--38",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "31.184.204.42",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--39",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "beacon.net.eu.org",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--40",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "c.glb-ru.info",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--41",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "claudfront.net",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--42",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "maxpatrol.net",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--43",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "nsdps.cc",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--44",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "rcsmf100.net",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--45",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "wmssh.com",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--46",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "dw-filter.com",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--47",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "net-sensors.net",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--48",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "description": "mvs05.zyns.com",
+            "indicator_types": ["malicious-activity"],
+            "pattern": "ipv4-addr",
+            "pattern_type": "stix",
+            "valid_from": "2024-05-23T12:00:00.000Z"
+        },
 
         {
             "type": "vulnerability",
@@ -1013,7 +1587,7 @@
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "refers-to",
             "source_ref": "report--0",
-            "target_ref": "attack-pattern--4"
+            "target_ref": "attack-pattern--6"
         },
         {
             "type": "relationship",
@@ -1023,7 +1597,7 @@
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "refers-to",
             "source_ref": "report--0",
-            "target_ref": "attack-pattern--1"
+            "target_ref": "attack-pattern--2"
         },
         {
             "type": "relationship",
@@ -1033,7 +1607,7 @@
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "refers-to",
             "source_ref": "report--0",
-            "target_ref": "attack-pattern--2"
+            "target_ref": "attack-pattern--3"
         },
         {
             "type": "relationship",
@@ -1043,7 +1617,7 @@
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "refers-to",
             "source_ref": "report--0",
-            "target_ref": "attack-pattern--3"
+            "target_ref": "attack-pattern--5"
         },
         {
             "type": "relationship",
@@ -1053,7 +1627,7 @@
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "refers-to",
             "source_ref": "report--0",
-            "target_ref": "attack-pattern--0"
+            "target_ref": "attack-pattern--1"
         },
         {
             "type": "relationship",
@@ -1173,7 +1747,7 @@
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "uses",
-            "source_ref": "attack-pattern--4",
+            "source_ref": "attack-pattern--6",
             "target_ref": ["tools--5", "tools--6"]
         },
         {
@@ -1183,7 +1757,7 @@
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "uses",
-            "source_ref": "attack-pattern--4",
+            "source_ref": "attack-pattern--6",
             "target_ref": ["tools--10", "tools--11", "tools--12", "tools--13", "tools--14", "tools--15", "tools--16", "tools--17", "tools--18"]
         },
         {
@@ -1193,7 +1767,7 @@
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "uses",
-            "source_ref": "attack-pattern--1",
+            "source_ref": "attack-pattern--2",
             "target_ref": ["tools--0", "tools--1", "tools--2", "tools--3", "tools--4", "tools--7", "tools--8", "tools--9"]
         },
         {
@@ -1203,7 +1777,7 @@
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "uses",
-            "source_ref": "attack-pattern--2",
+            "source_ref": "attack-pattern--3",
             "target_ref": ["tools--0", "tools--1", "tools--2", "tools--3", "tools--4", "tools--7", "tools--8", "tools--9"]
         },
         {
@@ -1213,7 +1787,7 @@
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "uses",
-            "source_ref": "attack-pattern--3",
+            "source_ref": "attack-pattern--5",
             "target_ref": ["tools--0", "tools--1", "tools--2", "tools--3", "tools--4", "tools--7", "tools--8", "tools--9"]
         },
         {
@@ -1223,7 +1797,7 @@
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "targets",
-            "source_ref": "attack-pattern--0",
+            "source_ref": "attack-pattern--1",
             "target_ref": "vulnerability--0"
         },
         {
@@ -1233,7 +1807,7 @@
             "created": "2023-11-30T12:00:00.000Z",
             "modified": "2024-01-09T20:30:00.000Z",
             "relationship_type": "targets",
-            "source_ref": "attack-pattern--0",
+            "source_ref": "attack-pattern--1",
             "target_ref": "vulnerability--1"
         },
         {
@@ -1325,6 +1899,196 @@
             "relationship_type": "indicates",
             "source_ref": ["indicator--11", "indicator--12", "indicator--13"],
             "target_ref": "malware--0"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--36",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": ["indicator--27", "indicator--28", "indicator--29", "indicator--30", "indicator--31", "indicator--32", "indicator--33", "indicator--34", "indicator--35", "indicator--36", "indicator--37"],
+            "target_ref": "malware--0"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--37",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": ["indicator--27", "indicator--28", "indicator--29", "indicator--30", "indicator--31", "indicator--32", "indicator--33", "indicator--34", "indicator--35", "indicator--36", "indicator--37"]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--38",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "report--0"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--39",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "report--3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--40",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--3",
+            "target_ref": "intrusion-set--0"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--41",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "attack-pattern--0"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--42",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": ["tools--19", "tools--20", "tools--21", "tools--22", "tools--23", "tools--24", "tools--25", "tools--26", "tools--27", "tools--28"]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--43",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "attack-pattern--4"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--44",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0",
+            "target_ref": ["tools--19", "tools--20", "tools--21", "tools--22", "tools--23", "tools--24", "tools--25", "tools--26", "tools--27", "tools--28"]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--45",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--4",
+            "target_ref": ["tools--19", "tools--20", "tools--21", "tools--22", "tools--23", "tools--24", "tools--25", "tools--26", "tools--27", "tools--28"]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--46",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--6",
+            "target_ref": ["tools--19", "tools--20", "tools--21", "tools--22", "tools--23", "tools--24", "tools--25", "tools--26", "tools--27", "tools--28"]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--47",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "attack-pattern--7"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--48",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-01-09T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--0",
+            "target_ref": "attack-pattern--7"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--50",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "attack-pattern--2"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--51",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "attack-pattern--3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--52",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "attack-pattern--5"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--53",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": "attack-pattern--1"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--54",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "refers-to",
+            "source_ref": "report--2",
+            "target_ref": ["indicator--38", "indicator--39", "indicator--40", "indicator--41", "indicator--42", "indicator--43", "indicator--44", "indicator--45", "indicator--46", "indicator--47", "indicator--48"]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--55",
+            "created": "2024-05-23T12:00:00.000Z",
+            "modified": "2024-06-17T20:30:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": ["indicator--38", "indicator--39", "indicator--40", "indicator--41", "indicator--42", "indicator--43", "indicator--44", "indicator--45", "indicator--46", "indicator--47", "indicator--48"],
+            "target_ref": "threat-actor--0"
         }
     ]
 }
